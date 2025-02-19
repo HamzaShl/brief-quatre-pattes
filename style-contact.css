@@ -31,7 +31,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 60px;
+	margin-top: 65px;
 	font-size: xx-large;
 }
 a {
@@ -55,13 +55,46 @@ h5 p {
 form {
 	display: flex;
 	flex-direction: column;
+	padding: 20px;
+	box-shadow: 0px 10px 15px 4px rgba(0, 0, 0, 0.45);
+	border-radius: 5px;
+}
+.forms {
 	width: 80%;
-	align-items: center;
-	background-color: #bababa;
+	margin: 10%;
+	border: solid 2px #d9d9d9;
+	border-radius: 5px;
+}
+input {
+	border: solid 2px #d9d9d9;
+	height: 30px;
+}
+select {
+	border: solid 2px #d9d9d9;
+	height: 30px;
+}
+#subject {
+	padding-left: 2%;
+	font-weight: 600;
+}
+#message {
+	width: 100%;
+	border: solid 2px #d9d9d9;
 }
 .forms img {
-	width: 20px;
-	height: 20px;
+	width: 17px;
+	height: 17px;
+}
+.btnSend {
+	color: white;
+	background-color: #08956a;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2%;
+	font-weight: bold;
+	border-radius: 5px;
 }
 footer {
 	background-color: #1f2937;

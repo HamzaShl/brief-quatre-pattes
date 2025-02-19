@@ -31,19 +31,28 @@
 		<h2>Contactez-nous</h2>
 		<section class="forms">
 			<form>
-				<p>Nom</p>
-				<input type="text" />
-				<p>Email</p>
-				<input type="email" />
-				<label>Sujet</label>
+				<label for="name">Nom</label>
+				<br />
+				<input id="name" type="text" />
+				<br />
+				<label for="email">Email</label>
+				<br />
+				<input id="email" type="email" />
+				<br />
+				<label for="subject">Sujet</label>
+				<br />
 				<select name="" id="subject">
 					<option value="">Question sur les dons</option>
 					<option value="">Partenariat</option>
 					<option value="">Autre</option>
 				</select>
-				<p>Message</p>
-				<textarea id="">Ecrivez votre Message</textarea>
-				<button type="submit">
+				<br />
+
+				<label for="message">Message</label>
+				<br />
+				<textarea id="message"></textarea>
+				<br />
+				<button type="submit" class="btnSend">
 					<img src="assets/send-icon.png" alt="envoyer" />Envoyer
 				</button>
 			</form>
