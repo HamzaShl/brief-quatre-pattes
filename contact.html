@@ -3,40 +3,69 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Nous contacter</title>
+		<link rel="stylesheet" href="style-contact.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+
+		<title>Contact</title>
 	</head>
 	<body>
 		<header>
-			<div id="header_left">
+			<div class="header_left">
 				<img src="assets/logo-icon.png" alt="logo" />
 				<h3>Quatre Pattes</h3>
 			</div>
-			<div id="header_right">
-				<p>Accueil</p>
-				<p>Contact</p>
-				<button type="button">
-					<img src="assets/heart-icon.png" alt="faire un don" />Faire un don
+			<div class="header_right">
+				<a href="index.html">Accueil</a>
+				<a href="contact.html">Contact</a>
+				<button type="button" class="btnDonation">
+					<img src="assets/heart-icon.png" alt="faire un don" /><a
+						>Faire un don</a
+					>
 				</button>
 			</div>
 		</header>
 		<h2>Contactez-nous</h2>
-
-		<form>
-			<p>Nom</p>
-			<input type="text" />
-			<p>Email</p>
-			<input type="email" />
-			<p>Sujet</p>
-			<select name="" id="subject">
-				<option value="">Question sur les dons</option>
-				<option value="">Partenariat</option>
-				<option value="">Autre</option>
-			</select>
-			<p for="">Message</p>
-			<textarea id="">Ecrivez votre Message</textarea>
-			<input type="submit" value="Envoyer" /><img
-				src="assets/send-icon.png"
-				alt="Envoyer" />
-		</form>
+		<section class="forms">
+			<form>
+				<p>Nom</p>
+				<input type="text" />
+				<p>Email</p>
+				<input type="email" />
+				<label>Sujet</label>
+				<select name="" id="subject">
+					<option value="">Question sur les dons</option>
+					<option value="">Partenariat</option>
+					<option value="">Autre</option>
+				</select>
+				<p>Message</p>
+				<textarea id="">Ecrivez votre Message</textarea>
+				<button type="submit">
+					<img src="assets/send-icon.png" alt="envoyer" />Envoyer
+				</button>
+			</form>
+		</section>
+		<footer>
+			<div class="footer-description">
+				<h5>Quatre Pattes</h5>
+				<p>
+					Ensemble protégeons les animaux et donnons-leur <br />
+					une vie meilleure.
+				</p>
+			</div>
+			<div class="footer-contact">
+				<h5>Contact</h5>
+				<div class="footer-mail">
+					<img src="assets/mail-icon.png" alt="mail" />
+					<p>contact@quatrepattes.org</p>
+				</div>
+			</div>
+			<div class="footer-description">
+				<h5>Suivez-nous</h5>
+			</div>
+		</footer>
 	</body>
 </html>
