@@ -91,7 +91,7 @@ a {
 
 .price-choice button {
 	height: 180px;
-	width: 300px;
+	width: 100%;
 	background-color: white;
 	border-color: #d9d9d9;
 	display: flex;
@@ -115,7 +115,6 @@ a {
 	gap: 40px;
 	padding: 10px;
 }
-
 .time-choice button {
 	height: 40px;
 	width: 120px;
@@ -135,18 +134,24 @@ a {
 
 .sMission {
 	background-color: #d1f9e7;
-	display: flex;
 	padding: 60px 20px 60px 20px;
+}
+.img-txt {
+	display: flex;
+	height: 100%;
+	width: 100%;
 }
 .sMission img {
 	width: 50%;
-	height: 100%;
 	box-shadow: 0px 12px 17px 0px #bababa;
 	border-radius: 15px 0 0 15px;
 }
 .txtMission {
 	background-color: white;
+	padding-right: 90px;
+	padding-bottom: 20px;
 	width: 50%;
+
 	display: flex;
 	flex-direction: column;
 	align-items: baseline;
@@ -344,4 +349,80 @@ footer h5 {
 .forms img {
 	width: 40px;
 	height: 40px;
+}
+@media screen and (max-width: 1000px) {
+	header {
+		flex-direction: column;
+		height: 180px;
+	}
+	.header_left {
+		padding-left: 20px;
+	}
+	.header_right {
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 20px;
+		gap: 10px;
+	}
+	.btnDonation {
+		width: 98%;
+		justify-content: flex-start;
+	}
+	.img-txt {
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+	}
+	.sMission img {
+		width: 100%;
+		box-shadow: 0px 12px 17px 0px #bababa;
+		border-radius: 15px 15px 0px 0px;
+	}
+	.allParamDonation {
+		width: 90%;
+	}
+	.btnDon {
+		display: block;
+		height: 20px;
+	}
+	.price-choice {
+		flex-direction: column;
+		align-items: center;
+	}
+	.price-choice button {
+		height: 100%;
+	}
+	.data {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.txtMission {
+		width: 100%;
+	}
+	.btn-true-false {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.btn-true-false button {
+		height: 40%;
+	}
+	.debriefs {
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+	}
+	.debrief1 {
+		width: 90%;
+		gap: 20px;
+	}
+	.debrief1 p,
+	.debrief1 h4 {
+		justify-content: flex-start;
+		padding-left: 20px;
+	}
+	footer {
+		height: 371px;
+		flex-direction: column;
+		padding-left: 20px;
+	}
 }
