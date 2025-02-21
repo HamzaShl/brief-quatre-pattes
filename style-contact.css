@@ -129,6 +129,10 @@ footer img {
 footer h5 {
 	display: inline flex;
 }
+.error {
+	color: red;
+	font-size: larger;
+}
 
 @media screen and (max-width: 1000px) {
 	header {

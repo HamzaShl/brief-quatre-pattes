@@ -30,28 +30,32 @@
 		</header>
 		<h2>Contactez-nous</h2>
 		<section class="forms">
-			<form>
+			<form id="myForm">
 				<label for="name">Nom</label>
-				<br />
 				<input id="name" type="text" />
+				<div id="error-username" class="error"></div>
 				<br />
+
 				<label for="email">Email</label>
-				<br />
 				<input id="email" type="email" />
+				<div id="error-email" class="error"></div>
+
 				<br />
+
 				<label for="subject">Sujet</label>
-				<br />
 				<select name="" id="subject">
 					<option value="">Question sur les dons</option>
 					<option value="">Partenariat</option>
 					<option value="">Autre</option>
 				</select>
+
 				<br />
 
 				<label for="message">Message</label>
-				<br />
 				<textarea id="message"></textarea>
+				<div id="error-message" class="error"></div>
 				<br />
+
 				<button type="submit" class="btnSend">
 					<img src="assets/send-icon.png" alt="envoyer" />Envoyer
 				</button>
@@ -76,5 +80,6 @@
 				<h5>Suivez-nous</h5>
 			</div>
 		</footer>
+		<script src="script-contact.js"></script>
 	</body>
 </html>
