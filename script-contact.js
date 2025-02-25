@@ -41,6 +41,8 @@ function validateForm() {
 
 	// Si tout est valide
 	if (isValid) {
-		alert("Formulaire envoyé avec succès!");
+		alert(
+			"Votre message a bien été envoyé. Il sera lu dans les plus brefs délais."
+		);
 	}
 }
